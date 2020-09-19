@@ -4,10 +4,7 @@
 
 char ChangeToCapital(char);
 char ChangeToCapital(char ch){
-    char cap = ' ';
-    std::string UpdateWord;
-    cap = toupper(ch);
-    return cap;
+    return toupper(ch);
 }
 
 int main()
