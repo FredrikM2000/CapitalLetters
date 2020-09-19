@@ -9,7 +9,6 @@ char ChangeToCapital(char ch){
 
 int main()
 {
-    std::vector <std::string> tempSentence;
     std::cout << "Please type something:";
     std::string sentence;
     std::getline(std::cin, sentence);
@@ -24,5 +23,5 @@ int main()
             sentence.at(i) = ChangeToCapital(sentence.at(i));
         }
     }
-    std::cout << sentence;
+    std::cout <<"Updated sentence : " << sentence;
 }
