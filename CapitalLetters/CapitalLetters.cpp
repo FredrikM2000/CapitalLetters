@@ -14,12 +14,12 @@ int main()
     std::getline(std::cin, sentence);
 
     for (int i = 0; i < sentence.size(); i++) {
-       if (i > 1) {
+       if (i != 0) {
             if (sentence.at(i - 1) == ' ') {
                 sentence.at(i) = ChangeToCapital(sentence.at(i));
             }
         }
-        else if (i == 0) {
+        else {
             sentence.at(i) = ChangeToCapital(sentence.at(i));
         }
     }
